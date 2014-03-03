@@ -13,9 +13,12 @@ pip install -r requirements.txt
 ## Usage
 
 ```python
+from CoinbaseClient import CoinbaseClient
+
 key = os.environ['API_KEY']
 secret = os.environ['API_SECRET']
 client = CoinbaseClient(API_KEY=key, API_SECRET=secret)
 client.get_balance()
+print client.balance
 ```
 
